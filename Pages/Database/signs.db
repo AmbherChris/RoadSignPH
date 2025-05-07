@@ -1,0 +1,25 @@
+-- Create Categories Table
+CREATE TABLE IF NOT EXISTS categories (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL
+);
+
+-- Create Signs Table
+CREATE TABLE IF NOT EXISTS signs (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    category_id INTEGER NOT NULL,
+    name TEXT NOT NULL,
+    FOREIGN KEY (category_id) REFERENCES categories(id)
+);
+
+-- Insert Categories
+INSERT INTO categories (name) VALUES ('Regulator Signs');
+INSERT INTO categories (name) VALUES ('Warning Signs');
+
+-- Insert Signs for Regulator Signs
+INSERT INTO signs (category_id, name) VALUES (1, 'Priority Signs');
+INSERT INTO signs (category_id, name) VALUES (1, 'Direction Signs');
+
+-- Insert Signs for Warning Signs
+INSERT INTO signs (category_id, name) VALUES (2, 'Warning: Slippery Road');
+INSERT INTO signs (category_id, name) VALUES (2, 'Warning: Speed Limit');
