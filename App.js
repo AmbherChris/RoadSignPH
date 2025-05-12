@@ -17,7 +17,7 @@ const App = () => {
   const handlePress = (type, navigation) => {
   const selectedType = buttons.find((item) => item.type === type);
   if (selectedType) {
-    navigation.navigate('TypeOfSigns', { groups: selectedType.groups, type: selectedType.type });
+    navigation.navigate('TypeOfSigns', { groups: selectedType.groups, type: selectedType.type, description: selectedType.description, signs: selectedType.signs });
   }
 };
 

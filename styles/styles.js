@@ -1,5 +1,6 @@
 import { StyleSheet, Dimensions } from 'react-native';
 import { StatusBar } from 'react-native';
+import TypeOfSigns from '../Screen/typeOfSigns';
 
 const { height } = Dimensions.get('window'); // Get screen height for responsive design
 
@@ -203,7 +204,34 @@ const styles = StyleSheet.create({
     elevation: 6,
     zIndex: 0,
   },
+
+
+
+  groupOfSigns_btn: {
+    backgroundColor: '#3D38D8',
+    height: 60,
+    width: '85%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'center',
+    borderRadius: 15,
+    marginVertical: 10,
+    borderWidth: 1,
+    borderColor: '#ccc',
+
+    // iOS Shadow
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.2,
+    shadowRadius: 6,
+
+    // Android Shadow
+    elevation: 6,
+  },
 });
+
+
+
 
 
 export default styles;

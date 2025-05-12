@@ -1,15 +1,36 @@
 export const buttons = [
   {
     type: 'Regulatory Signs',
+    description: 'test sjdnkbadkwebwhfebsklhjklsdbcklfwehbewbclwb ',
     groups: [
-      { group: 'Priority Signs', signs: ['Stop', 'Give Way'] },
-      { group: 'Direction Signs', signs: ['No Entry', 'No Left Turn'] },
-      { group: 'Prohibited/Restriction Signs', signs: ['No Entry', 'No Left Turn'] },
-      { group: 'Speed Signs', signs: ['No Entry', 'No Left Turn'] },
-      { group: 'Parking and Stopping Signs', signs: ['No Entry', 'No Left Turn'] },
-      { group: 'Miscellaneous Signs', signs: ['No Entry', 'No Left Turn'] },
+       {
+      group: 'Priority Signs',
+      description: 'priority sign description',
+      signs: [
+        {
+          name: 'stop sign',
+          // or a URI
+          description: 'stop it'
+        },
+        {
+          name: 'Detour Ahead',
+          //image: require('../assets/images/detour_ahead.png'),
+          description: 'Shows that traffic will be diverted.'
+        }
+      ]
+    },
+
+
+
+
+
+
+
     ],
   },
+
+
+
   {
     type: 'Warning Signs',
     groups: [
